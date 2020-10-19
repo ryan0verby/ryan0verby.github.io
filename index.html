@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skelestyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf2530e204.js" crossorigin="anonymous"></script>
+</head>
+    <title>Ryan's Portfolio</title>
+<body>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="container">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#intro"><i class="fas fa-address-card"></i></a>
+            <a href="#portfolio"><i class="fas fa-folder-open"></i></a>
+            <a href="#socials"><i class="fas fa-hashtag"></i></a>
+            <!-- # just brings it to top of the page -->
+        </div>
+    </nav>
+    <!-- NAV BAR -->
+
+    <section class="particles-js" id="particles-js">
+        <div class="container">
+            <div class="avatar">
+                <img src="Images/gradpic.jpg" alt="avatar">
+            </div>
+            <h2>Ryan Overby</h2>
+            <h3>Computer Information Technology</h3>
+            <div class="inyou">
+                <a href="https://www.instagram.com/ryan_0verby/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCHu5QDyGDDAJSfqpb4TrB7Q" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/ryan0verby" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ryano@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="audio1">
+                <audio id="myaudio" autoplay controls loop>
+                    <source src="Audio/enoshy - solitude.mp3" type="audio/mpeg">
+                </audio>
+                <script>
+                    var audio = document.getElementById("myaudio");
+                    audio.volume = 0.07;
+                </script>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+</html>

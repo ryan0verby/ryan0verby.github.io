@@ -1,0 +1,177 @@
+* {
+    transition: ease 500ms;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: rgb(28,27,27);
+    background: linear-gradient(90deg, rgba(28,27,27,0.98) 0%, rgba(28,27,27,0.98) 50%, rgba(28,27,27,0.98) 100%);
+}
+
+nav .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+nav .container i {
+    color: white;
+    font-size: 35px;
+    
+}
+
+nav .container i:hover {
+    transform: rotate(360deg) scale(1.3); 
+    cursor: crosshair;
+    color: cyan;
+    
+    
+}
+
+.particles-js {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(43, 41, 54, 1) 0%, rgba(51, 51, 51, 1) 59%, rgba(26, 67, 75, 1) 100%);
+}
+
+.particles-js .container {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.particles-js .avatar {
+    width: 170px;
+    height: 170px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    background: #000;
+    overflow: hidden;
+    transform: translateY(0px);
+    animation: float 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+.particles-js .avatar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.particles-js h2 {
+    margin: 30px 0 10px 0;
+    color: white;
+    z-index: 1;
+}
+
+.particles-js h3 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 1;
+}
+
+.particles-js .inyou {
+    margin: 30px 0;
+    z-index: 3;
+}
+
+.particles-js .inyou i {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 50px;
+    /* transition: .5s ease-in-out; */
+}
+
+.particles-js .inyou i:hover  {
+    transform: scale(1.3);
+    cursor: crosshair;
+}
+
+
+.particles-js .inyou a:nth-child(1):hover i {
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.particles-js .inyou a:nth-child(2):hover i {
+    color: red
+}
+
+
+
+.particles-js .inyou a:nth-child(3):hover i {
+    color: goldenrod;
+}
+
+
+.particles-js .inyou a:nth-child(4):hover i {
+    color: greenyellow;
+}
+
+.audio1 {
+    z-index: 5;
+    
+}
+
+
+/* MEDIA QUERIES  */
+
+@media (max-width:1150px) {
+    nav .container {
+        justify-content: space-evenly;
+        z-index: 100;
+        /* Makes the icons in the nav bar not hit edge of screen when switched to phone */
+    }
+}
