@@ -181,7 +181,7 @@ nav .container i:hover {
 @media (max-width:1150px) {
     nav .container {
         justify-content: space-evenly;
-        z-index: 100;
+        z-index: 99;
         /* Makes the icons in the nav bar not hit edge of screen when switched to phone */
     }
 }
